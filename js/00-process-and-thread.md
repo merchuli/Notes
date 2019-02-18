@@ -59,7 +59,7 @@ Process - active entity: a program **in excution in memory**
 
 ### 示意圖
 
-![Thread](./images/process-thread/Thread.png)
+![Thread](./images/process-thread/thread.png)
 
 
 
