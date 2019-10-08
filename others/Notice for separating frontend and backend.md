@@ -52,7 +52,7 @@
 
 ### CORS(Cross-Origin Resource Sharing)，跨域
 
-####同源政策(Same-Origin policy)
+#### 同源政策(Same-Origin policy)
 
 - 同通訊協定(protocal)
   - http / https => 不同協定
@@ -67,8 +67,7 @@
 
 
 
-
-####呼叫端
+#### 呼叫端
 
 - 加入自定義的標頭檔
   - header 的 ContentType 指定為 application/x-www-form-urlencoded; charset=UTF-8
@@ -82,7 +81,7 @@
 
 
 
-####被呼叫端
+#### 被呼叫端
 
 - 加上 header('Access-Control-Allow-Origin: xxxx' ), xxxx 為允許存取的來源
 
