@@ -14,6 +14,15 @@
 
 ## 常用指令
 
+- pull
+
+  ```
+  // 更新到最新 <branch_name> codebase
+  git pull --rebase origin <branch_name>
+  ```
+
+  
+
 - add
 
   ```
