@@ -77,22 +77,22 @@
   // 捨棄不需要的 stash
 git stash drop stash@{1}
   
-// 提取想要的 stash 並刪除
-  git stash pop stash@{0}
+  // 提取想要的 stash 並刪除
+    git stash pop stash@{0}
   
   // 查看想要的 stash
   git stash show -p stash@{2}
   ```
-  
-  
-  
+
+
+
 - cherry-pick（待補）
 
   ```
   
   ```
 
-  
+
 
 - log
 
@@ -107,7 +107,7 @@ git stash drop stash@{1}
   git log --graph
   ```
 
-  
+
 
 - branch
 
@@ -118,13 +118,15 @@ git stash drop stash@{1}
   // 以 current_branch 為 base 建 new_branch
   git checkout -b <new_branch> <current_branch>
   
-// 將 local 的 new_branch 上傳到 remote
+  // 將 local 的 new_branch 上傳到 remote
   git push -u origin <new_branch>
   
   // 建立 local new_branch 並與遠端連接
   git checkout origin/new_branch -b new_branch
   ```
-  
+
+
+
 - fetch（待補充更多）
 
   ```
@@ -132,22 +134,21 @@ git stash drop stash@{1}
   git fetch
   ```
 
-  
+
 
 - reset（待補充更多）
 
   ```
   // 恢復到上一步，[scenario]: 剛才的 commit 後悔了，想要拆掉重做
   git reset HEAD^
+  
+  // 預設為 mixed 模式，commit 拆出來的檔案會留在工作目錄
+  // https://gitbook.tw/chapters/using-git/reset-commit.html
   ```
 
-  預設為 mixed 模式，commit 拆出來的檔案會留在工作目錄
 
-  https://gitbook.tw/chapters/using-git/reset-commit.html
 
-  
-
-- rebase（待補充）
+- rebase（待補充）  
 
   ```
   // 有好幾個操作行為
@@ -157,35 +158,34 @@ git stash drop stash@{1}
   // - edit 還沒試成功
   // - fixup 有試成功
   
-  
   // 跳出 rebase mode
   git rebase --abort
+  
+  // https://gitbook.tw/chapters/rewrite-history/change-commit-message.html
+  // 會常常搭配 git push -f 處理
   ```
 
-  https://gitbook.tw/chapters/rewrite-history/change-commit-message.html
 
-  
-
-  會常常搭配 git push -f 處理
-
-  
 
 - config
 
   ```
   // show git user name
   git config user.name
+  
+  git config --global user.name "John Doe"
+  git config --global user.email johndoe@example.com
+  
+  // 再次提醒，若你有傳遞 `--global` 參數，只需要做這工作一次，
+  // 因為在此系統，不論 Git 做任何事都會採用此資訊。
+  // 若你想指定不同的名字或電子郵件給特定的專案，只需要在該專案目錄內執行此命令，並確定未加上 `--global` 參數。 
+  // Reference[1]: https://alvinalexander.com/git/git-show-change-username-email-address
+  // Reference[2]: https://git-scm.com/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-%E5%88%9D%E6%AC%A1%E8%A8%AD%E5%AE%9A-Git
   ```
 
-  https://alvinalexander.com/git/git-show-change-username-email-address
-
   
 
-  
-
-  
-
-## Reference
+ ## Reference
 
 https://blog.darkthread.net/blog/my-git-cheatsheet/
 
