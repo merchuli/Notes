@@ -114,6 +114,9 @@ git stash drop stash@{1}
   
   // 圖形化 log
   git log --graph
+  
+  // 顯示最近兩筆提交所做的修改內容
+  git log -p -2
   ```
 
 
@@ -167,6 +170,12 @@ git stash drop stash@{1}
   // - edit 還沒試成功
   // - fixup 有試成功
   
+  // edit 可以修改 commit 內容，例如新增檔案或改 code
+  // 使用 edit 後，新增 / 改檔案
+  // git add <file_name>
+  // git commit --amend
+  // git rebase --continue 完成 rebase 的操作
+  
   // 跳出 rebase mode
   git rebase --abort
   
@@ -190,6 +199,16 @@ git stash drop stash@{1}
   // 若你想指定不同的名字或電子郵件給特定的專案，只需要在該專案目錄內執行此命令，並確定未加上 `--global` 參數。 
   // Reference[1]: https://alvinalexander.com/git/git-show-change-username-email-address
   // Reference[2]: https://git-scm.com/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-%E5%88%9D%E6%AC%A1%E8%A8%AD%E5%AE%9A-Git
+  ```
+
+
+
+
+- show
+
+  ```
+  // 查看修改內容
+  git show <file_name>
   ```
 
   
