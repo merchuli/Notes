@@ -10,6 +10,8 @@
 
 常用指令
 
+情境
+
 
 
 ## 常用指令
@@ -17,12 +19,23 @@
 - pull
 
   ```
+  // 更新到最新的現在分支（可以避免無謂的 merge 節點）
+  git pull --rebase
+  
   // 更新到最新 <branch_name> codebase
   git pull --rebase origin <branch_name>
   ```
 
-  
 
+- push
+
+  ```
+  // 強制把本機的分支覆蓋遠端的
+  git push -f
+  ```
+  
+  
+  
 - add
 
   ```
@@ -164,17 +177,21 @@ git stash drop stash@{1}
 
   ```
   // 有好幾個操作行為
-  git rebase -i 
+  git rebase -i <commit_hash>
   
   // - reword 改 commit 訊息
-  // - edit 還沒試成功
+  // - edit 修改 commit 訊息以及內容
   // - fixup 有試成功
+  // - drop 捨棄 commit
   
   // edit 可以修改 commit 內容，例如新增檔案或改 code
   // 使用 edit 後，新增 / 改檔案
   // git add <file_name>
   // git commit --amend
   // git rebase --continue 完成 rebase 的操作
+  
+  // 完成 rebase 的操作
+  git rebase --continue
   
   // 跳出 rebase mode
   git rebase --abort
@@ -212,6 +229,17 @@ git stash drop stash@{1}
   ```
 
   
+
+## 情境
+
+### 使用 rebase 更新分支
+
+- git pull --rebase origin \<branch> (更新到最新 \<branch> codebase)
+- git push -f (強制把本機的分支覆蓋遠端的)
+
+
+
+
 
  ## Reference
 
