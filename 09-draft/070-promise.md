@@ -63,6 +63,43 @@ img1.addEventListener('error', function() {
 
 ### Events aren't always the best way
 
+- A promise can only succeed or fail once. It cannot succeed or fail twice, neither can it switch from success to failure or vice versa.
+- If a promise has succeeded or failed and you later add a success/failure callback, the correct callback will be called, even though the event took place earlier.
+
+
+
+### Promise 術語
+
+- **fulfilled** - The action relating to the promise succeeded
+- **rejected** - The action relating to the promise failed
+- **pending** - Hasn't fulfilled or rejected yet
+- **settled** - Has fulfilled or rejected
+
+
+
+### Promises arrive in JavaScript!
+
+Here's how you create a promise:
+
+```javascript
+const promise = new Promise((resolve, reject) => {
+  // do a thing, possibly async, then…
+
+  if (/* everything turned out fine */) {
+    resolve("Stuff worked!");
+  }
+  else {
+    reject(Error("It broke"));
+  }
+});
+```
+
+
+
+
+
+
+
 ｀
 
 
