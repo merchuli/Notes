@@ -111,7 +111,8 @@ git stash drop stash@{1}
 - cherry-pick（待補）
 
   ```
-  
+  // 複製其他分支的 Commit 的內容過來貼上，並生成一個 commit
+  git cherry-pick <commit_hash>
   ```
 
 
@@ -179,10 +180,11 @@ git stash drop stash@{1}
   // 有好幾個操作行為
   git rebase -i <commit_hash>
   
-  // - reword 改 commit 訊息
-  // - edit 修改 commit 訊息以及內容
-  // - fixup 有試成功
-  // - drop 捨棄 commit
+  // - 0. 改 commit 排序(請注意不同 commit 之間的相依性)
+  // - 1. reword 改 commit 訊息
+  // - 2. edit 修改 commit 訊息以及內容
+  // - 3. fixup 有試成功
+  // - 4. drop 捨棄 commit
   
   // edit 可以修改 commit 內容，例如新增檔案或改 code
   // 使用 edit 後，新增 / 改檔案
