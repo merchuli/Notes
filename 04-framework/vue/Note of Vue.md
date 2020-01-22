@@ -1,6 +1,8 @@
 # Vue 學習筆記
 
 >背景：使用 Angular 一年半以上，以此為基礎記錄轉 Vue 遇到的困惑點
+>
+>可以搭配 vue-todo 專案使用
 
 ## Overview
 

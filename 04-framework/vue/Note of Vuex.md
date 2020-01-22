@@ -1,5 +1,7 @@
 # Vuex 學習筆記
 
+> 可以搭配 vue-todo 專案使用
+
 ![vuex-mutation](images/vuex-mutation.png)
 
 
