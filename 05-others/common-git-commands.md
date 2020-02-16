@@ -83,7 +83,7 @@
 
 - stash
 
-- ```
+  ```
   // 儲存
   git stash
   
@@ -97,7 +97,7 @@
   git stash apply stash@{0}
   
   // 捨棄不需要的 stash
-git stash drop stash@{1}
+  git stash drop stash@{1}
   
   // 提取想要的 stash 並刪除
   git stash pop stash@{0}
