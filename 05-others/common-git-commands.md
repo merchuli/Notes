@@ -100,7 +100,7 @@
 git stash drop stash@{1}
   
   // 提取想要的 stash 並刪除
-    git stash pop stash@{0}
+  git stash pop stash@{0}
   
   // 查看想要的 stash
   git stash show -p stash@{2}

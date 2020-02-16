@@ -20,6 +20,26 @@
 
 4. Object.entries() [4]
 
+5. Destructuring Assignment [5]
+
+   ```javascript
+   const duration = {
+   	startDate: '',
+   	endDate: '',
+     others: {
+       excludedDates: [],
+     },
+   };
+   
+   //// Using destructuring assignment
+   const {duration: {startDate, endDate, others: {excludedDates}} = this;
+   //// => get startDate, endDate, excludedDates       
+   ```
+
+   
+
+   
+
 
 
 
@@ -41,3 +61,5 @@
 [3]
 
 [4] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
+
+[5] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
