@@ -27,7 +27,7 @@ Merchu Liang, Oct. 18, 2017
 - 外面 --> **flex container**
 - 裡面的所有物件 --> **flex item(s)** (只有第一層受影響)
 
-![System_container_items](images/system.jpg)
+![System_container_items](images/flexbox/system.jpg)
 
 
 
@@ -43,7 +43,7 @@ Merchu Liang, Oct. 18, 2017
   - 預設只有一條線
   - 可以多條，如果大於 1 條，會跟著 Cross Axis 方向下長
 
-![System_axis](images/axis.jpg)
+![System_axis](images/flexbox/axis.jpg)
 
 **可以決定**
 
@@ -51,7 +51,7 @@ Merchu Liang, Oct. 18, 2017
 
 2. 對齊方式
 
-   ​
+   
 
 ## Properties of The Flex Container
 
@@ -73,7 +73,7 @@ Container 可使用的屬性，指令下在 container 那一層。
 
 - column-reverse (縱向逆向排列)
 
-  ​
+  
 
 ### justify-content
 
@@ -93,7 +93,7 @@ Container 可使用的屬性，指令下在 container 那一層。
 
 - space-around (多餘的空間分 N(=number of items) 等份，左右兩邊留 N/2 的空間)
 
-  ![Justify_content](images/Justify_content.PNG)
+  ![Justify_content](images/flexbox/Justify_content.PNG)
 
 ### align-items
 
@@ -113,7 +113,7 @@ Container 可使用的屬性，指令下在 container 那一層。
 
   ![Align_items](images/Align_items.PNG)
 
-![Align_items_baseline](images/Align_items_baseline.PNG)
+![Align_items_baseline](images/flexbox/Align_items_baseline.PNG)
 
 
 
@@ -132,7 +132,7 @@ Container 可使用的屬性，指令下在 container 那一層。
 - space-around (多餘的空間分 N(=number of items) 等份，上下留 N/2 的空間)
 - stretch
 
-![Align_content](images/Align_content.PNG)
+![Align_content](images/flexbox/Align_content.PNG)
 
 
 
@@ -150,7 +150,7 @@ Container 可使用的屬性，指令下在 container 那一層。
 
 - wrap-reverse (由下而上)
 
-  ![Flex_wrap](images/Flex_wrap.PNG)
+  ![Flex_wrap](images/flexbox/Flex_wrap.PNG)
 
 
 
@@ -173,7 +173,7 @@ Item 可使用的屬性，指令下在 item 那一層。
 
 - flex-basis: 當有多餘的寬度空間時，定義此 item 的寬度，如果是百分比則是以外框的寬度為基準單位。
 
-  ​
+  
 
 
 
@@ -185,7 +185,7 @@ Item 可使用的屬性，指令下在 item 那一層。
 
 **預設值：**0
 
-![Order](images/Order.PNG)
+![Order](images/flexbox/Order.PNG)
 
 
 
@@ -202,7 +202,7 @@ Item 可使用的屬性，指令下在 item 那一層。
 - center
 - stretch (items 延展開)
 - baseline (以 flex items 的第一行文字的底為基準對齊)
-  ![Align_self](images/Align_self.PNG)
+  ![Align_self](images/flexbox/Align_self.PNG)
 
 
 
