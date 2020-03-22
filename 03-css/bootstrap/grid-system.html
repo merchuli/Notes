@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Grid System</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <style>
+    	body {
+    		padding: 8px 8px 8px 8px;
+    	}
+    	.center {
+    		text-align: center;
+    		margin-top: 8px;
+    	}
+		.red {
+		    background: #FF709E;
+		}
+		.yellow {
+		    background: #FFF57F;
+		}
+		.blue {
+		    background: #7ABACC;
+		}
+	</style>
+  </head>
+  <body>
+    <h1 class="center">Grid System</h1>
+	<p>基於一個 12 (預設值，可改變)欄的版面，以媒體查詢範圍創建不同等級。</p>
+	<h2>基本介紹</h2>
+	<p>1. Col- (Extra small) < 576px</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-4 red">
+			<h4>Col-4</h4>
+		     </div>
+			<div class="col-4 yellow">
+			<h4>Col-4</h4>
+		    </div>
+			<div class="col-4 blue">
+			<h4>Col-4</h4>
+		    </div>
+		 </div>
+	</div>
+	</br>
+	<p>2. Col-sm (small) >= 576px，視窗大小低於 576px 時，排版會 collapse(往下掉)</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 red">
+			<h4>Col-sm-4</h4>
+		     </div>
+			<div class="col-sm-4 yellow">
+			<h4>Col-sm-4</h4>
+		    </div>
+			<div class="col-sm-4 blue">
+			<h4>Col-sm-4</h4>
+		    </div>
+		 </div>
+	</div>
+	</br>
+	<p>3. Col-md (medium) >= 768px，視窗大小低於 768px 時，排版會 collapse(往下掉)</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 red">
+			<h4>Col-md-2</h4>
+		     </div>
+			<div class="col-md-6 yellow">
+			<h4>Col-md-6</h4>
+		    </div>
+			<div class="col-md-4 blue">
+			<h4>Col-md-4</h4>
+		    </div>
+		 </div>
+	</div>
+	</br>
+	<p>4. Col-lg (large) >= 992px，視窗大小低於 992px 時，排版會 collapse(往下掉)</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-1 red">
+			<h4>Col-lg-1</h4>
+		     </div>
+			<div class="col-lg-1 yellow">
+			<h4>Col-lg-1</h4>
+		    </div>
+			<div class="col-lg-4 blue">
+			<h4>Col-lg-4</h4>
+		    </div>
+		 </div>
+	</div>
+	</br>
+	<p>Col-xl (extra large) >= 1200px，視窗大小低於 1200px 時，排版會 collapse(往下掉)</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-6 red">
+			<h4>Col-xl-6</h4>
+		     </div>
+			<div class="col-xl-6 yellow">
+			<h4>Col-xl-6</h4>
+		    </div>
+			<div class="col-xl-6 blue">
+			<h4>Col-xl-6</h4>
+		    </div>
+		 </div>
+	</div>
+	</br>
+	<h2>延伸</h2>
+	<p>1: change-width: 自定義大小，md 後面接數字，格子大小會依比例切割</p>
+	<p>2: Equal-width, multi-row，多行網格</p>
+	<div class="container">	
+		<div class="row">
+		  <div class="col-6 blue">col-6</div>
+		  <div class="col-6 red">col-6</div>
+		  <div class="w-100"></div>
+		  <div class="col-6 red">col-6</div>
+		  <div class="col-6 blue">col-6</div>
+		</div>
+	</div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>

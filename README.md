@@ -16,6 +16,7 @@
 - css
   
   - flexbox
+  - bootstrap 4
 - others
   - common-git-commands
   - SSH
@@ -24,5 +25,4 @@
 - draft
   - closure
   - promise
-  
   
