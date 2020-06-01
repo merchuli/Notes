@@ -230,6 +230,28 @@
   git show <file_name>
   ```
 
+
+
+
+- tag
+
+  ```
+  // 列出標籤
+  git tag
+  
+  // 新增 tag (commit_hash 如果不加，default 就是當前的 commit)
+  git tag -a <tag_name> <commit_hash> -m "<tag_message>"
+  
+  // 將標籤推送到 remote
+  git push origin <tag_name>
+  
+  // 刪除 Local 標籤
+  git tag -d <tag_name>
+  
+// 刪除 Remote 標籤
+  git push --delete origin <tag_name>
+  ```
+  
   
 
 ## 情境
