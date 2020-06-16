@@ -8,11 +8,17 @@
 
 ## Overview
 
+Git basic intro
+
 常用指令
 
 情境
 
 
+
+## Git Basic Intro
+
+![git-transport](./img/git-transport.png)
 
 ## 常用指令
 
@@ -165,11 +171,15 @@
 - reset（待補充更多）
 
   ```
+  // 將 head 移到 commit_hash 或 tag_name 的位置，codebase 變到 commit_hash 或 tag_name
+  // git reset <commit_hash || tag_name> --<param>
+  // param:
+  // - 0. --soft, Does not touch the index file or the working tree at all (but resets the head to <commit>). This leaves all your changed files "Changes to be committed", as git status would put it.
+  // - 1. --mixed, default, Resets the index but not the working tree (i.e., the changed files are preserved but not marked for commit) 
+  // - 2. --hard, 工作目錄和暫存區的內容都直接丟掉
+  
   // 恢復到上一步，[scenario]: 剛才的 commit 後悔了，想要拆掉重做
   git reset HEAD^
-  
-  // 預設為 mixed 模式，commit 拆出來的檔案會留在工作目錄
-  // https://gitbook.tw/chapters/using-git/reset-commit.html
   ```
 
 
@@ -248,6 +258,8 @@
   // 刪除 Local 標籤
   git tag -d <tag_name>
   
+  ```
+
 // 刪除 Remote 標籤
   git push --delete origin <tag_name>
   ```
@@ -269,3 +281,5 @@
 
 https://blog.darkthread.net/blog/my-git-cheatsheet/
 
+
+  ```
