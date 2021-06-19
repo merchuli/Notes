@@ -1,3 +1,9 @@
+一般狀況可以直接拿電腦 default 的 ssh key，把 publickey 新增到 github/gitlab 使用者 > 設定 > ssh
+
+
+
+
+
 # SSH - 同一裝置多個 Git 帳號
 
 >2019 / 12 / 15
@@ -176,3 +182,7 @@ https://dotblogs.com.tw/as15774/2018/04/30/174737
 [3] 同時使用多個 Git 帳號
 
 http://finfin.github.io/2015/01/17/multiple-git-accounts.html
+
+[4]
+
+https://gitlab.lollipop.camera/help/ssh/README#working-with-non-default-ssh-key-pair-paths
